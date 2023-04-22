@@ -17,3 +17,8 @@ def test_yandex_search(browser):
 def test_yandex_image(browser):
     yandex_main_page = YandexPage(browser)
     yandex_main_page.go_to_site()
+    yandex_main_page.click_on_the_menu_button()
+    yandex_main_page.click_on_the_image_button()
+
+
+

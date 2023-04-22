@@ -1,1 +1,1 @@
-# tests_yandex_page
+# praktikum_new_diplom
