@@ -12,9 +12,9 @@ Files
 
 [pages/base.py](pages/base.py) contains PageObject pattern implementation for Python.
 
-[pages/page.py](pages/elements.py) contains helper class to working with web elements on web pages.
+[pages/page.py](pages/page.py) contains helper class to working with web elements on web pages.
 
-[pages/locators.py](pages/locators.py)contains web elements locators.
+[pages/locators.py](pages/locators.py) contains web elements locators.
 
 [tests/tests_yandex_page.py](tests/tests_yandex_page.py) contains searching test and images test for yandex page(https://ya.ru/)
 
