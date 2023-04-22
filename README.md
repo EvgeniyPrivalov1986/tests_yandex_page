@@ -1,9 +1,8 @@
 Introduction
 ------------
 
-This repository contains basic example of usage PageObject
-pattern with Selenium and Python (PyTest + Selenium).
-
+This repository contains the solution of a test task for using
+a page object template with Selenium and Python (Py Test + Selenium).
 
 Files
 -----
