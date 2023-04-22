@@ -1,5 +1,5 @@
 import time
-from pages.BaseApp import BasePage
+from pages.base import BasePage
 from pages.locators import YandexSearchLocators, TenzorParams
 
 

@@ -1,4 +1,4 @@
-from pages.YandexPages import YandexPage
+from pages.page import YandexPage
 import time
 
 
