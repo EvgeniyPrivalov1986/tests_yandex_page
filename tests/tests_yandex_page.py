@@ -5,14 +5,8 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
-def test_eggs():
-    LOGGER.info('eggs info')
-    LOGGER.warning('eggs warning')
-    LOGGER.error('eggs error')
-    LOGGER.critical('eggs critical')
-    assert True
-
 def test_yandex_search(browser):
+   """ The first test case of checking the search on the Yandex page. """
     yandex_main_page = YandexPage(browser)
     yandex_main_page.go_to_site()
     time.sleep(20)
@@ -24,8 +18,8 @@ def test_yandex_search(browser):
     link = yandex_main_page.get_first_link()
     yandex_main_page.check_first_url(link)
 
-
 def test_yandex_image(browser):
+    """ The second test case of checking the images on the Yandex page. """
     yandex_main_page = YandexPage(browser)
     yandex_main_page.go_to_site()
     yandex_main_page.click_on_the_menu_button()
@@ -34,9 +28,11 @@ def test_yandex_image(browser):
     image_url = browser.current_url
     yandex_main_page.check_image_url(image_url)
     category_name = yandex_main_page.get_category_name()
-    yandex_main_page.click_on_the_first_category_button()
+    yandex_main_page.click_on_the_first_category()
+    search_name = yandex_main_page.get_search_name()
+    yandex_main_page.check_text_in_search_field(category_name, search_name)
     yandex_main_page.click_on_the_first_image()
-    time.sleep(1)
+    time.sleep(2)
     first_image = browser.current_url
     yandex_main_page.click_on_the_next_image()
     time.sleep(1)
@@ -46,6 +42,3 @@ def test_yandex_image(browser):
     time.sleep(1)
     previous_image = browser.current_url
     yandex_main_page.check_previous_image(previous_image, first_image)
-
-
-
