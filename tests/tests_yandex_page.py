@@ -1,6 +1,16 @@
 from pages.page import YandexPage
 import time
+import logging
 
+LOGGER = logging.getLogger(__name__)
+
+
+def test_eggs():
+    LOGGER.info('eggs info')
+    LOGGER.warning('eggs warning')
+    LOGGER.error('eggs error')
+    LOGGER.critical('eggs critical')
+    assert True
 
 def test_yandex_search(browser):
     yandex_main_page = YandexPage(browser)
@@ -23,6 +33,7 @@ def test_yandex_image(browser):
     browser.switch_to.window(browser.window_handles[1])
     image_url = browser.current_url
     yandex_main_page.check_image_url(image_url)
+    category_name = yandex_main_page.get_category_name()
     yandex_main_page.click_on_the_first_category_button()
     yandex_main_page.click_on_the_first_image()
     time.sleep(1)
