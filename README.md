@@ -42,6 +42,7 @@ How To Run Tests
     pytest
     ```
 
+
 4.2) Or run tests with logging and saving reports in tests/report.html:
 
     ```bash
