@@ -9,7 +9,6 @@ def test_yandex_search(browser):
     """ The first test case of checking the search on the Yandex page. """
     yandex_main_page = YandexPage(browser)
     yandex_main_page.go_to_site()
-    time.sleep(20)
     yandex_main_page.enter_word("Тензор")
     yandex_main_page.check_popup_content()
     yandex_main_page.click_on_the_search_button()

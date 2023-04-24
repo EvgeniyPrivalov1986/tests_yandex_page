@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class YandexSearchLocators:
+class SearchLocators:
     """ Locators on the Yandex search page. """
     LOCATOR_YANDEX_SEARCH_FIELD = (
         By.CSS_SELECTOR,
@@ -21,7 +21,7 @@ class YandexSearchLocators:
     )
 
 
-class YandexImagesLocators:
+class ImagesLocators:
     """ Locators on the Yandex images page. """
     LOCATOR_YANDEX_SEARCH_FIELD_IMAGE_NAME = (
         By.XPATH,
