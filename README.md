@@ -4,6 +4,13 @@ Introduction
 This repository contains the solution of a test task for using
 a page object template with Selenium and Python (PyTest + Selenium).
 
+## Stack
+
+ - Python
+ - Pytest
+ - Selenium
+ - Pytest-html
+
 Files
 -----
 
