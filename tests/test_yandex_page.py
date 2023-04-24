@@ -6,7 +6,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 def test_yandex_search(browser):
-   """ The first test case of checking the search on the Yandex page. """
+    """ The first test case of checking the search on the Yandex page. """
     yandex_main_page = YandexPage(browser)
     yandex_main_page.go_to_site()
     time.sleep(20)
@@ -17,6 +17,7 @@ def test_yandex_search(browser):
     yandex_main_page.check_search_url(page_url)
     link = yandex_main_page.get_first_link()
     yandex_main_page.check_first_url(link)
+
 
 def test_yandex_image(browser):
     """ The second test case of checking the images on the Yandex page. """
@@ -32,7 +33,7 @@ def test_yandex_image(browser):
     search_name = yandex_main_page.get_search_name()
     yandex_main_page.check_text_in_search_field(category_name, search_name)
     yandex_main_page.click_on_the_first_image()
-    time.sleep(2)
+    time.sleep(1)
     first_image = browser.current_url
     yandex_main_page.click_on_the_next_image()
     time.sleep(1)
