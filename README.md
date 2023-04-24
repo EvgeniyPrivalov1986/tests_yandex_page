@@ -35,15 +35,13 @@ How To Run Tests
 
 3) Download Selenium WebDriver from https://chromedriver.chromium.org/downloads (choose version which is compatible with your browser)
 
-
-4.1) Run tests with saving logs in tests/pytest.log:
+4) Run tests with saving logs in tests/pytest.log:
 
     ```bash
     pytest
     ```
 
-
-4.2) Or run tests with logging and saving reports in tests/report.html:
+5) Or run tests with logging and saving reports in tests/report.html:
 
     ```bash
     pytest --html=report.html
